@@ -2,9 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Bg3 from "../assets/Bg3.jpg";
-import Bg4 from "../assets/Bg4.jpg";
 import Me from "../assets/Me.jpg";
-import Connect from "../assets/Connect.jpg";
+import Connect from "../assets/Connect.jpeg";
 
 function Home() {
   const navigate = useNavigate(); 
@@ -16,11 +15,7 @@ function Home() {
     >
       {/* Full-Screen Background */}
       <div className="absolute inset-0 h-full w-full">
-        <img
-          className="absolute inset-0 h-full w-full object-cover opacity-70"
-          src={Bg4}
-          alt="Background"
-        />
+       
         <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-teal-500 via-green-400 to-lime-300 opacity-80"></div>
       </div>
 
