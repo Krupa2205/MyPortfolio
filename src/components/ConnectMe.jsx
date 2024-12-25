@@ -32,6 +32,11 @@ function ConnectMe() {
           setName("");
           setEmail("");
           setMessage("");
+
+          // Hide the success message after 3 seconds
+          setTimeout(() => {
+            setFeedbackSent(false);
+          }, 3000); // 3000ms = 3 seconds
         },
         (error) => {
           console.log(error.text);

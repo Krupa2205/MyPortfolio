@@ -24,11 +24,7 @@ function Projects() {
     <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-hidden pb-12">
       {/* Background */}
       <div className="absolute inset-0 h-full w-full">
-        <img
-          className="absolute inset-0 h-full w-full object-cover opacity-70"
-          src={Bg4}
-          alt="Background"
-        />
+      
         <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-teal-500 via-green-400 to-lime-300 opacity-80"></div>
       </div>
 
