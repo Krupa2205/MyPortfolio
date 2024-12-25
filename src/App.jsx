@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import AboutMe from "./components/AboutMe"; // About Me Page
-import Projects from "./components/Projects"; // Projects Page
-import ConnectMe from "./components/ConnectMe"; // Connect Me Page
+import AboutMe from "./components/AboutMe"; 
+import Projects from "./components/Projects";
+import ConnectMe from "./components/ConnectMe";
 
 function App() {
   return (

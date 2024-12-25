@@ -1,16 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; // Import for navigation
+import { useNavigate } from "react-router-dom";
 import Bg3 from "../assets/Bg3.jpg";
 import Bg4 from "../assets/Bg4.jpg";
 import Me from "../assets/Me.jpg";
 import Connect from "../assets/Connect.jpg";
 
 function Home() {
-  const navigate = useNavigate(); // Initialize navigation hook
+  const navigate = useNavigate(); 
 
   return (
-    <header className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-y-auto">
+    <header
+      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-y-auto pb-16"  // Increased bottom padding
+      style={{ fontFamily: "'Kanit', sans-serif" }} 
+    >
       {/* Full-Screen Background */}
       <div className="absolute inset-0 h-full w-full">
         <img
@@ -28,6 +31,7 @@ function Home() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
+          style={{ fontFamily: "'Oswald', sans-serif" }} 
         >
           Welcome to <span className="text-white">My Portfolio</span>
         </motion.h1>
@@ -48,12 +52,17 @@ function Home() {
         {/* About Me Card */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="w-full sm:w-72 h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-          onClick={() => navigate("/about")} // Navigate to the About Me page
+          className="w-full sm:w-72 h-96 bg-gradient-to-br from-blue-200 to-pink-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+          onClick={() => navigate("/about")} 
         >
           <img src={Me} alt="Card 1" className="h-2/3 w-full object-cover" />
           <div className="p-4 text-center text-white">
-            <h2 className="text-lg sm:text-xl font-semibold mb-2">About Me</h2>
+            <h2
+              className="text-lg sm:text-xl font-semibold mb-2"
+              style={{ fontFamily: "'Oswald', sans-serif" }} 
+            >
+              About Me
+            </h2>
             <p className="text-sm font-light">
               Learn more about my journey, skills, and interests.
             </p>
@@ -63,12 +72,17 @@ function Home() {
         {/* Projects Card */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="w-full sm:w-72 h-96 bg-gradient-to-br from-yellow-400 to-red-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-          onClick={() => navigate("/projects")} // Navigate to the Projects page
+          className="w-full sm:w-72 h-96 bg-gradient-to-br from-yellow-200 to-red-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+          onClick={() => navigate("/projects")} 
         >
           <img src={Bg3} alt="Card 2" className="h-2/3 w-full object-cover" />
           <div className="p-4 text-center text-white">
-            <h2 className="text-lg sm:text-xl font-semibold mb-2">Projects</h2>
+            <h2
+              className="text-lg sm:text-xl font-semibold mb-2"
+              style={{ fontFamily: "'Oswald', sans-serif" }} 
+            >
+              Projects
+            </h2>
             <p className="text-sm font-light">
               Discover the innovative projects I have built.
             </p>
@@ -78,8 +92,8 @@ function Home() {
         {/* Connect Me Card */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="w-full sm:w-72 h-96 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-          onClick={() => navigate("/connect")} // Navigate to the Connect Me page
+          className="w-full sm:w-72 h-96 bg-gradient-to-br from-green-200 to-blue-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+          onClick={() => navigate("/connect")} 
         >
           <img
             src={Connect}
@@ -87,13 +101,27 @@ function Home() {
             className="h-2/3 w-full object-cover"
           />
           <div className="p-4 text-center text-white">
-            <h2 className="text-lg sm:text-xl font-semibold mb-2">
+            <h2
+              className="text-lg sm:text-xl font-semibold mb-2"
+              style={{ fontFamily: "'Oswald', sans-serif" }} 
+            >
               Connect With Me
             </h2>
             <p className="text-sm font-light">Connect With Me here :)</p>
           </div>
         </motion.div>
       </div>
+
+      {/* Footer Section */}
+<div className="w-full flex justify-center py-4 bg-opacity-80 bg-gray-900">
+  <p className="text-sm md:text-base">
+    
+    <span className="animate-pulse">
+      ❤️🔥🤗✨
+    </span>
+  </p>
+</div>
+
     </header>
   );
 }

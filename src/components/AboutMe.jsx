@@ -8,24 +8,27 @@ function About() {
 
   const educationDetails = [
     {
-      year: "2020",
-      title: "High School",
-      description: "Completed high school with a focus on Science and Mathematics."
+      "year": "2020",
+      "title": "10th Grade",
+      "description": "Successfully completed 10th grade with a strong foundation in Commerce."
     },
     {
-      year: "2022",
-      title: "Intermediate",
-      description: "Graduated with distinction in Science Stream."
+      "year": "2022",
+      "title": "12th Grade",
+      "description": "Graduated high school with a focus on Commerce, achieving an A+ grade and ranking in the Top 2 of the school."
     },
     {
-      year: "2024",
-      title: "Bachelor of Computer Applications",
-      description: "Currently pursuing BCA with expertise in web development and programming."
+      "year": "2024",
+      "title": "(BCA)",
+      "description": "Earned a BCA degree with expertise in web development, programming, and modern technologies."
     }
   ];
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-hidden">
+    <div
+      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-hidden pt-12 pb-12" // Added padding-top and padding-bottom
+      style={{ fontFamily: "'Kanit', sans-serif" }}
+    >
       {/* Background */}
       <div className="absolute inset-0 h-full w-full">
         <img
@@ -54,11 +57,12 @@ function About() {
       {/* Header */}
       <motion.h1
         className="relative z-10 text-4xl sm:text-5xl font-bold text-white mb-16"
+        style={{ fontFamily: "'Oswald', sans-serif" }}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        About Me
+        About Me👋🏻
       </motion.h1>
 
       {/* Education Circles */}
