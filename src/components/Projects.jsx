@@ -24,7 +24,6 @@ function Projects() {
     <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-900 overflow-hidden pb-12">
       {/* Background */}
       <div className="absolute inset-0 h-full w-full">
-      
         <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-teal-500 via-green-400 to-lime-300 opacity-80"></div>
       </div>
 
@@ -45,7 +44,7 @@ function Projects() {
 
       {/* Header */}
       <motion.h1
-        className="relative z-10 text-4xl sm:text-5xl font-bold text-white mb-16"
+        className="relative z-10 text-4xl sm:text-5xl font-bold text-white mb-16 mt-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
