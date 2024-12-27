@@ -18,7 +18,7 @@ function ConnectMe() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS logic to send the feedback to your email
+    
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,  // Service ID from .env
