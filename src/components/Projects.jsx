@@ -12,8 +12,8 @@ const projects = [
     link: "https://wa-clone-522b8.web.app/",
   },
   {
-    name: "Syntax Squad",
-    link: "https://syntaxsquad52.netlify.app/",
+    name: "Trend Vibe",
+    link: "https://trend-vibe-nine.vercel.app/",
   },
 ];
 
